@@ -1,5 +1,4 @@
 # see: https://EditorConfig.org
-
 root = true
 
 [*.{js,ts,tsx,scss,json}]
