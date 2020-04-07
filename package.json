@@ -143,5 +143,10 @@
     "presets": [
       "react-app"
     ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
