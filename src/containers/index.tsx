@@ -5,7 +5,7 @@ import Pages from './pages';
 const Containers: React.FC = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/" component={Pages} exact />
+      <Route path="/" children={() => <Pages />} exact />
     </Switch>
   </BrowserRouter>
 );
