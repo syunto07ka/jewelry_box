@@ -81,12 +81,7 @@ module.exports = function(webpackEnv) {
       },
       {
         loader: require.resolve('css-loader'),
-        options: {
-          ...cssOptions,
-          modules: {
-            localIdentName: "[path]___[name]__[local]___[hash:base64:5]"
-          }
-        },
+        options: cssOptions
       },
       {
         // Options for PostCSS as we reference these options twice
@@ -466,6 +461,9 @@ module.exports = function(webpackEnv) {
                 {
                   importLoaders: 3,
                   sourceMap: isEnvProduction && shouldUseSourceMap,
+                  modules: {
+                    localIdentName: "[path]___[name]__[local]___[hash:base64:5]"
+                  }
                 },
                 'sass-loader'
               ),
