@@ -5,13 +5,13 @@ import './App.scss';
 function App() {
   return (
     <div styleName="app">
-      <header styleName="appHeader">
-        <img src={logo} styleName="appLogo" alt="logo" />
+      <header styleName="app-header">
+        <img src={logo} styleName="app-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
-          styleName="appLink"
+          styleName="app-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
