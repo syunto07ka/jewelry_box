@@ -148,6 +148,18 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins": [
+      [
+        "react-css-modules",
+        {
+          "filetypes": {
+            ".scss": {
+              "syntax": "postcss-scss"
+            }
+          }
+        }
+      ]
     ]
   },
   "commitlint": {
