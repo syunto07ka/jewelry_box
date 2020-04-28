@@ -165,6 +165,9 @@
       ]
     ]
   },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
