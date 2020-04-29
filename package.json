@@ -168,7 +168,10 @@
     ]
   },
   "stylelint": {
-    "extends": "stylelint-config-standard",
+    "extends":[
+      "stylelint-config-standard",
+      "stylelint-config-sass-guidelines"
+    ],
     "plugins": [
       "stylelint-order"
     ],
