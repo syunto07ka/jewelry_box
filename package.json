@@ -67,6 +67,10 @@
     "sass-loader": "8.0.2",
     "semver": "6.3.0",
     "style-loader": "0.23.1",
+    "stylelint": "13.3.3",
+    "stylelint-config-sass-guidelines": "7.0.0",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-order": "4.0.0",
     "terser-webpack-plugin": "2.3.5",
     "ts-pnp": "1.1.6",
     "typescript": "^3.7.5",
@@ -164,6 +168,22 @@
         }
       ]
     ]
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-sass-guidelines"
+    ],
+    "plugins": [
+      "stylelint-order"
+    ],
+    "rules": {
+      "order/order": [
+        "custom-properties",
+        "declarations"
+      ],
+      "order/properties-alphabetical-order": true
+    }
   },
   "commitlint": {
     "extends": [
