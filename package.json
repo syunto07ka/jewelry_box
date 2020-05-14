@@ -91,7 +91,22 @@
     "build-storybook": "build-storybook"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "env": {
+      "es6": true
+    },
+    "extends": [
+      "react-app",
+      "prettier",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
