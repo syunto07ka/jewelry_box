@@ -216,7 +216,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --fix"
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{css,scss}": "stylelint --fix"
   },
   "devDependencies": {
     "@storybook/addon-actions": "5.3.18",
